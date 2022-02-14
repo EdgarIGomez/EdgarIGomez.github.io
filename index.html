@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="text-center py-3">
+    <h1 class="py-3">Edgar Ivan Gomez</h1>
+<!--    Mobile Hamburger Bar for hiding and showing contact information-->
+    <div class="pos-f-t" id="contact-me-sm">
+        <nav class="navbar  d-md-none">
+            <button class="navbar-toggler w-100 text-white" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                How to contact me
+            </button>
+        </nav>
+        <div class="d-md-none collapse" id="navbarToggleExternalContent">
+            <div class="p-4 d-md-none">
+                    <div class="py-2 text-white d-md-none">Phone: <a href="#">(210)323-1534</a></div>
+                    <div class="py-2 text-white d-md-none">Email: <a href="#">edgar.i.gomez03@gmail.com</a></div>
+                    <div class="py-2 text-white d-md-none">linkdIn: <a href="#">Placeholder text</a></div>
+                    <div class="py-2 text-white d-md-none">GitHub: <a href="#">GitHub/EdgarIGomez</a> </div>
+            </div>
+        </div>
+
+    </div>
+<!--    Contact info for medium and larger screens-->
+    <div class="row text-white" id="contact-me-md">
+        <div class="col-md-3 py-2 d-none d-md-block">Phone: <br><a href="#">(210)323-1534</a></div>
+        <div class="col-md-3 py-2 d-none d-md-block">Email: <br><a href="#">edgar.i.gomez03@gmail.com</a></div>
+        <div class="col-md-3 py-2 d-none d-md-block">linkdIn: <br><a href="#">Placeholder text</a></div>
+        <div class="col-md-3 py-2 d-none d-md-block">GitHub: <br><a href="#">GitHub/EdgarIGomez</a> </div>
+    </div>
+</header>
+<!-- About Me for all screen sizes collapsible-->
+<section id="about-me" class="container py-2">
+    <div class="py-2 w-100 text-white project-link text-center" id="about-me-link"><a href="#about-me-card" data-toggle="collapse" class="h2">About Me</a></div>
+    <div id="about-me-card" class="collapse show">
+        <div class=" card card-body py-2" id="about-me-info">
+            <div>I am an aspiring full-stack developer with an interest in getting a job in this field to be able to expand on my skills. I am ready to put put my skills to use in a working environment while also learning new things.If you would like to get to know a bit more about me on the professional side here's a link to my resume</div>
+            <div class="text-center py-2"><a href="#">Edgar Ivan Gomez's Resume</a></div>
+        </div>
+    </div>
+
+
+</section>
+<!--Project cards for smaller than md screen sizes-->
+<section id="projects" class="container py-2 d-md-none text-center">
+    <div id="first-project">
+        <div class="py-2 w-100 text-white project-link" id="codeup-project-link"><a href="#codeup-design-project" data-toggle="collapse" class="h2">Codeup Design Project</a></div>
+        <div id="codeup-design-project" class="collapse">
+            <div class="card card-body py-2">The Codeup desing project is a project to show responsiveness between different screen sizes. The page is responsive to  phone, tablet, laptop and also computer sizes. <br><a href="#">Codeup Design Project Link</a> </div>
+        </div>
+        <br>
+    </div>
+    <div id="second-project">
+        <div class="py-2 w-100 text-white project-link" id="coffee-project-link"><a href="#coffee-project" data-toggle="collapse" class="h2">Coffee Project</a></div>
+        <div id="coffee-project" class="collapse">
+            <div class="card card-body py-2">The coffee project is a coffee website where a user can see what coffees are available and filter them by name or type of roast. The user is even able to add their own coffees to the list which are also able to filtered. <br><a href="#">Coffee Project Link</a> </div>
+        </div>
+    </div>
+    <br>
+    <div id="third-project">
+        <div class="py-2 w-100 text-white project-link" id="weather-map-project-link"><a href="#weather-map-project" data-toggle="collapse" class="h2">Weather Map Project</a></div>
+        <div id="weather-map-project" class="collapse">
+            <div class="card card-body py-2">The Weather Map project is project using the Mapbox and OpenWeatherMap apis. The Weahter Map project give the user a 5-day weather forecast  and current weather forecast for San Antonio area with a map to see the area. The user is able to drag a marker on the map and grab the weather from wherever  it is dropped, they can also choose to type the name of the area to get weather from that location. <br><a href="#">Weather Map Project Link</a> </div>
+        </div>
+    </div>
+</section>
+<section id="projects-md-and-up" class="text-center container py-2 d-none d-md-block">
+   <div class="row">
+       <div id="first-project-md" class="col-md-6">
+           <div class="">
+               <div class="py-2 w-100 text-white h2 project-link m-0">Codeup Design Project</div>
+               <div class="bg-white card-body">The Codeup desing project is a project to show responsiveness between different screen sizes. The page is responsive to  phone, tablet, laptop and also computer sizes. <br><a href="#">Codeup Design Project Link</a> </div>
+           </div>
+
+
+           <br>
+       </div>
+       <div id="second-project-md" class="col-md-6">
+           <div class="py-2 w-100 text-white project-link h2 m-0">Coffee Project</div>
+           <div class="card card-body py-2">The coffee project is a coffee website where a user can see what coffees are available and filter them by name or type of roast. The user is even able to add their own coffees to the list which are also able to filtered. <br><a href="#">Coffee Project Link</a> </div>
+       </div>
+       <br>
+       <div id="third-project-md" class="col-md">
+           <div class="py-2 w-100 text-white project-link h2 m-0">Weather Map Project</div>
+           <div class="card card-body py-2">The Weather Map project is project using the Mapbox and OpenWeatherMap apis. The Weahter Map project give the user a 5-day weather forecast  and current weather forecast for San Antonio area with a map to see the area. The user is able to drag a marker on the map and grab the weather from wherever  it is dropped, they can also choose to type the name of the area to get weather from that location. <br><a href="#">Weather Map Project Link</a> </div>
+       </div>
+   </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>

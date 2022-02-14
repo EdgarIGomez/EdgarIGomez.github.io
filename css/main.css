@@ -1,0 +1,37 @@
+body {
+
+    background-color: #A5B5BF;
+}
+
+header a {
+    color: lightskyblue;
+}
+
+#contact-me-md {
+    background-color: #525B76;
+
+}
+
+#contact-me-sm {
+    background-color: #525B76;
+}
+
+#about-me-title {
+    background-color: #525B76;
+}
+
+.project-link  {
+    background-color: #525B76;
+    color: white;
+    /*text-decoration: none;*/
+    /*width: 100%;*/
+}
+
+.project-link a {
+    text-decoration: none;
+    color: white;
+}
+
+/*#coffee-project-link > .card {*/
+/*    background-color: #FED18C;*/
+/*}*/
